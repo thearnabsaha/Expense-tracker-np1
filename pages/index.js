@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import Head from 'next/head';
 const Form = () => {
     const [expense, setExpense] = useState({
         title:"",
@@ -25,6 +26,9 @@ const Form = () => {
     }
     return (
         <>
+          <Head>
+            <title>Expense tracker</title>
+          </Head>
           <div className='expenseForm'>
             <h1>Type your Expense</h1>
             <form action="" onSubmit={handleSubmit}>
