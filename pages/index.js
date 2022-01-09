@@ -37,7 +37,7 @@ const Form = () => {
                   <input type="number" name="amount" value={expense.amount} onChange={handleInput} placeholder='Amount'/>
                 </div>
                 <div className="down">
-                  <input type="date" name="date" value={expense.date} onChange={handleInput} />
+                  <input type="date" name="date" value={expense.date} onChange={handleInput} placeholder='Date'/>
                   <button type="submit">Add</button>
                 </div>
             </form>
