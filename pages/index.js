@@ -27,7 +27,7 @@ const Form = () => {
     return (
         <>
           <Head>
-            <title>Expense tracker</title>
+            <title>TAS Expense</title>
           </Head>
           <div className='expenseForm'>
             <h1>Type your Expense</h1>
