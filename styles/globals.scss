@@ -1,0 +1,119 @@
+//?############################# css reset #############################################
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+}
+//?############################# expense form #############################################
+.expenseForm{
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        font-size: 3rem;
+        color: whitesmoke;
+    }
+    .up{
+        input{
+            font-size: 2rem;
+            margin-top: 1.5rem;
+            margin-left: 2rem;
+            padding: .2rem;
+            border-radius: .2rem;
+            border: none;
+            outline: none;
+            &:hover{
+                background-color: gainsboro;
+            }
+            &::placeholder{
+                color: #666;
+            }
+        }
+    }
+    .down{
+        margin-bottom: 3rem;
+        input{
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            padding: .2rem;
+            border-radius: .2rem;
+            border: none;
+            outline: none;
+            margin-left: 5rem;
+            &::placeholder{
+                color: #666;
+            }
+        }
+        button{
+            font-size: 2.2rem;
+            padding: .4rem 2rem;
+            border-radius: .2rem;
+            border: none;
+            outline: none;
+            margin-left: 3rem;
+            background-color: whitesmoke;
+            &:hover{
+                background-color: gainsboro;
+            }
+        }
+    }
+}
+//?############################# expenses #############################################
+.expenses{
+    background-color: lightyellow ;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .expense{
+        background-color: lightsalmon;
+        border-radius: .4rem;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0rem;
+        .calender{
+            font-size: 3rem;
+            text-align: center;
+            background-color: lightyellow ;
+            border-radius: .4rem;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        .details{
+            display: flex;
+            h2{
+                font-size: 3rem;
+                text-transform: capitalize;
+                margin: 0rem 2rem;
+            }
+        }
+    }
+}
+//?############################# responsiveness #############################################
+@media(max-width:490px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:390px){
+    .expenseForm{
+        .up{
+            display: flex;
+            flex-direction: column;
+            input{
+                margin: 1.5rem 0rem;
+            }
+        }
+        .down{
+            input{
+                margin: 1.5rem 0rem;
+            }
+        }
+    }
+}
