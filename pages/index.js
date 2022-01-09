@@ -55,7 +55,7 @@ const Form = () => {
                                 </div>
                                   <div className="details">
                                     <h2>{e.title} -</h2>
-                                    <h2>{e.amount}$</h2>
+                                    <h2>{e.amount}/-</h2>
                                   </div>
                               </div>
                             </div>
